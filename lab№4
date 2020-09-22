@@ -1,0 +1,69 @@
+//№1
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	float a=3, b=4, S, P;
+	S = a * b;
+	P = 2 * (a + b);
+	cout << "S= "<< S<< "  P= "<< P<<endl;
+}
+
+
+//№2
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	float d=2, p=3.14, L;
+	L = d * p;
+	cout << "L= "<< L<<endl;
+}
+
+
+//№3
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	float a = 3, b = 4, s;
+	s = (a + b) / 2;
+	cout << "s= " <<s << endl;
+}
+
+
+//№4
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	float a = 7, b = 2, s,r,p,ch;   //s-сумма квадратов, r-разность квадратов, p-произведение квадратов, ch-частное квадратов.
+	a = a * a;
+	b = b * b;
+	s = a + b;
+	r = a - b;
+	p = a * b;
+	ch = a / b;
+	cout << "s= " << s << "  r= " << r << "  p= " << p << "  ch= " << ch << endl;
+}
+
+
+//№5
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	float a = 7, b = -2, s, r, p, ch;   //s-сумма модулей, r-разность модулей, p-произведение модулей, ch-частное модулей.
+	a = abs(a);
+	b = abs(b);
+	s = a + b;
+	r = a - b;
+	p = a * b;
+	ch = a / b;
+	cout << "s= " << s << "  r= " << r << "  p= " << p << "  ch= " << ch << endl;
+}

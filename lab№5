@@ -1,0 +1,117 @@
+//#1
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	cout << "Введите координаты точек ";
+	float x1, x2, y1, y2, x, y, r;
+	cin >> x1 >> y1 >> x2 >> y2;
+	if (x1 > x2)
+		x = x1 - x2;
+	else x = x2 - x1;
+	if (y1 > y2)
+		y = y1 - y2;
+	else y = y2 - y1;
+
+	r = sqrt(x * x + y * y);
+	cout << "Расстояние равно " << r;
+}
+
+//#2
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	cout << "Введите координаты точек ";
+	float a, b, c, ac, bc, s;
+	cin >> a >> b >> c;
+	if (a > c)
+		ac =a-c;
+	else ac=c-a;
+	if (b > c)
+		bc=b-c;
+	else bc=c-b;
+	cout << "Длинна отрезка ас= " << ac << "  Длинна отрезка bc=" << bc << "  А сумма длинн = " << ac + bc;
+}
+
+//#3
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	cout << "Введите координаты точек ";
+	float a, b, c;
+	cin >> a >> b >> c;
+	cout << "Произведение длинн отрезков= " << abs((c-a)*(b-c));
+}
+
+//#4
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	cout << "Введите координаты точек ";
+	float x1, x2, y1, y2, s, p,x,y;
+	cin >> x1 >> y1 >> x2 >> y2;
+	if (x1 > x2)
+		x = x1 - x2;
+	else x = x2 - x1;
+	if (y1 > y2)
+		y = y1 - y2;
+	else y = y2 - y1;
+
+	s = x * y;
+	p = 2 * (x + y);
+	cout << "Площадь равна " << s << "  Периметр равен " << p;
+}
+
+//#5
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	cout << "Введите координаты точек ";
+	float x1, x2, y1, y2, s, p, x3, y3, s1, s2, s3,x,y;
+	cin >> x1 >> y1 >> x2 >> y2 >> x3 >> y3;
+	if (x1 > x2)
+		x = x1 - x2;
+	else x = x2 - x1;
+	if (y1 > y2)
+		y = y1 - y2;
+	else y = y2 - y1;
+	s1 = sqrt(x * x + y * y);
+
+	if (x1 > x3)
+		x = x1 - x3;
+	else x = x3 - x1;
+	if (y1 > y3)
+		y = y1 - y3;
+	else y = y3 - y1;
+	s2 = sqrt(x * x + y * y);
+
+	if (x2 > x3)
+		x = x2 - x3;
+	else x = x3 - x2;
+	if (y2 > y3)
+		y = y2 - y3;
+	else y = y3 - y2;
+	s3 = sqrt(x * x + y * y);
+
+	if ((s1 + s2 <= s3) || (s1 + s2 <= s3) || (s2 + s3 <= s1))
+		cout << "Треугольника не существует";
+	else {
+		p = (s1 + s2 + s3) / 2;
+		s = sqrt(p * (p - s1) * (p - s2) * (p - s3));
+		cout << "Площадь равна " << s << "  Периметр равен " << p * 2;
+	}
+}

@@ -1,0 +1,66 @@
+//#1
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n;
+	cin >> n;
+	n = n % 60;
+	cout << n;
+}
+
+//#2
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n;
+	cin >> n;
+	n = n % 7;
+	cout << n;
+}
+
+//#3
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n,k;
+	cin >> k >> n;
+	k = (k+n) % 7;
+	if (k == 0)
+		cout << 7;
+	else
+		cout << k;
+}
+
+//#4
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a, b, c, s, k;
+	cin >> a >> b >> c;
+	k = a / c * b / c;
+	s = a * b - k * c * c;
+	cout << k << "  " << s;
+}
+
+//#5
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n,k;
+	cin >> n;
+	k = n / 100 + 1;
+	if (n % 100 == 0)
+		cout << k - 1;
+	else
+		cout << k;
+}

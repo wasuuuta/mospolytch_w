@@ -1,0 +1,138 @@
+//#1
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a, b;
+	cin >> a >> b;
+	if (a == b)
+	{
+		a = 0;
+		b = 0;
+	}
+	else {
+		if (a > b)
+			b = a;
+		else a = b;
+	}
+	cout << a << "  " << b;
+}
+
+//#2
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a, b, c,s;
+	cin >> a >> b >> c;
+	if ((a < b) && (a < c))
+		s = c + b;
+	else
+	{
+		if ((b < a) && (b < c))
+			s = a + c;
+		else
+			s = a + b;
+	}
+	cout << s;
+}
+
+//#3
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	cout << "Введите координаты точек A, B и C ";
+	float x1, x2, y1, y2, x3, y3, r1, r2, x, y;
+	cin >> x1 >> y1 >> x2 >> y2 >> x3 >> y3;
+	if (x1 > x2)
+		x = x1 - x2;
+	else x = x2 - x1;
+	if (y1 > y2)
+		y = y1 - y2;
+	else y = y2 - y1;
+	r1 = sqrt(x * x + y * y);
+
+	if (x1 > x3)
+		x = x1 - x3;
+	else x = x3 - x1;
+	if (y1 > y3)
+		y = y1 - y3;
+	else y = y3 - y1;
+	r2 = sqrt(x * x + y * y);
+
+	if (r1 == r2)
+		cout << "Точки равноудалены";
+	else {
+		if (r1 < r2)
+			cout << "Точка В расстояние равно " << r1;
+		else
+			cout << "Точка C расстояние равно " << r2;
+	}
+}
+
+//#4
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int x, y;
+	cin >> x >> y;
+	if ((x > 0) && (y > 0))
+		cout << 1;
+	if ((x < 0) && (y > 0))
+	cout << 2;
+	if ((x < 0) && (y < 0))
+	cout << 3;
+	if ((x > 0) && (y < 0))
+	cout << 4;
+}
+
+//#5
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int x;
+	cin >> x;
+	if ((x > 0) && ((x % 2) == 0))
+		cout << "Положительное чётное";
+	if ((x > 0) && ((x % 2) != 0))
+		cout << "Положительное нечётное";
+	if ((x < 0) && ((x % 2) == 0))
+		cout << "Отрицательное чётное";
+	if ((x < 0) && ((x % 2) != 0))
+		cout << "Отрицательное нечётное";
+	if (x == 0)
+		cout << "Нулевое число";
+}
+
+//#6 
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int x;
+	cin >> x;
+	if ((x > 99) && ((x % 2) == 0))
+		cout << "Трёхзначное чётное";
+	if ((x > 99) && ((x % 2) != 0))
+		cout << "Трёхзначное нечётное";
+	if ((x < 10) && ((x % 2) == 0))
+		cout << "Однозначное чётное";
+	if ((x < 10) && ((x % 2) != 0))
+		cout << "Однозначное нечётное";
+	if ((x < 100) && ((x % 2) == 0) && (x>9))
+		cout << "Двузначное чётное";
+	if ((x < 100) && ((x % 2) != 0) && (x > 9))
+		cout << "Двузначное нечётное";
+}

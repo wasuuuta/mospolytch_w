@@ -1,0 +1,67 @@
+
+//#1
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a;
+	cin >> a;
+	a = a / 1024;
+	cout << a;
+}
+
+//#2
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a,b;
+	cout << "Enter a and b ";
+	cin >> a >> b;
+	b = a / b;
+	cout << b;
+}
+
+//#3
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a, b;
+	cout << "Enter a and b ";
+	cin >> a >> b;
+	b = a % b;
+	cout << b;
+}
+
+//#4
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a, b,c;
+	cin >> a;
+	b = a / 10;
+	c = a % 10;
+	a = c * 10 + b;
+	cout << a;
+}
+
+//#5
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a, b, c;
+	cin >> a;
+	b = a / 100;
+	c = a % 100;
+	a = c * 10 + b;
+	cout << a;
+
+}

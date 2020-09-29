@@ -1,0 +1,111 @@
+//#1
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float a, b, c;
+	cout << "Введите A и B "<<endl;
+	cin >> a >> b;
+	c = a;
+	a = b;
+	b = c;
+	cout << "A= " << a << "  B= " << b;
+}
+
+//#2
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float a, b, c, d;
+	cout << "Введите A, B и С "<<endl;
+	cin >> a >> b>>c;
+	d = a;
+	a = c;
+	c = b;
+	b = d;	
+	cout << "A= " << a << "  B= " << b << "  C= "<<c;
+}
+
+//#3
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float a, b, c, e;
+	cout << "Введите A, B и С " << endl;
+	cin >> a >> b >> c;
+	e = b;
+	b = c;
+	c = a;
+	a = e;
+	cout << "A= " << a << "  B= " << b << "  C= " << c;
+}
+
+//#4
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float x,y;
+	cout << "Введите x " << endl;
+	cin >> x;
+	x = x * x;
+	y = x * x * x * 3 - 6 * x - 7;
+	cout << "y= " << y;
+}
+
+//#5
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float x, y;
+	cout << "Введите x " << endl;
+	cin >> x;
+	x = (x - 3) * (x - 3) * (x - 3);
+	y = x * x * 4 - 7 * x + 2;
+	cout << "y= " << y;
+}
+
+//#6
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float x,a;
+	cout << "Введите A " << endl;
+	cin >> a;
+	x = a * a;
+	a = x * x;
+	x = a * a;
+	cout << "A= " << x;
+}
+
+//#7
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float x, a,c;
+	cout << "Введите A " << endl;
+	cin >> a;
+	x = a * a;
+	c = x * x * a;
+	a = c * c * c;
+	cout << "A= " << a;
+}

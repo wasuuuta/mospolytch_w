@@ -1,0 +1,95 @@
+
+//#1
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	float a, q;
+	cin >> a;
+	q = 0;
+	while (q < 1) {
+		q += 0.1;
+		cout << q * a << "  ";
+	}
+}
+
+//#2
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	float a=1, n, s, q;
+	cin >> n;
+	q = 0; s = 1;
+	while (q != n)
+	{
+		a += 0.1;
+		q++;
+		s = s * a;		
+	}
+	cout << s;
+}
+
+//#3
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	float n, q, a, w;
+	cin >> n;
+	q = 1;
+	if (n == 1)
+		cout << 1;
+	else 
+	{
+		a = 2; w = 1;
+		while (w < n * n)
+		{
+			w += (2 * a - 1);
+			cout << q << "  ";
+			q = (2 * a - 1);
+			a++;
+		}
+		cout << q;
+	}
+}
+
+//#4
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	float n, a, b, s=0;
+	cin >> a >> n;
+	b = -1;
+		while (b < n)
+		{
+			b++;
+			s =s + pow(a,b);
+			
+		}
+		cout << s;
+
+}
+
+//#5
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	float  n, a, s = 1;
+	cin >> a >> n;
+	for (int i = 1; i < n+1; i++)
+	{
+		if ((i % 2) == 0)
+			s = s + pow(a, i);
+		else
+			s = s - pow(a, i);
+	}
+	cout << s;
+}

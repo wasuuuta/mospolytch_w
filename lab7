@@ -1,0 +1,97 @@
+
+//#1
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float a;
+	cout << "Введите угол в градусах "<<endl;
+	cin >> a;
+	a = a*3.14/180;
+	cout << "Угол в радианх равен " << a;
+}
+
+//#2
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float a;
+	cout << "Введите угол в радианах " << endl;
+	cin >> a;
+	a = a * 180/3.14;
+	cout << "Угол в градусах равен " << a;
+}
+
+//#3
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float x, y, a;
+	cout << "Введите X, A и Y " << endl;
+	cin >> x >> a >> y;
+	a = a / x;
+	x = a * y;
+	cout << "1 кг стоит " << a<< "  "<<y<<" кг стоит "<<x;
+}
+
+//#4
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float v1, v2, s, t;
+	cout << "Введите скорость автомобилей, расстояние между ними и время которое они будут удаляться " << endl;
+	cin >> v1 >> v2 >> s >> t;
+	s = s + (v1 + v2) * t;
+	cout << "Расстояние между ними будет " << s;
+}
+
+//#5
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float b, a;
+	cout << "Введите A и B " << endl;
+	cin >> a >> b;
+	if (a = 0)
+		cout << "А не должно быть равно 0!";
+	else
+		cout << "X= ", -b / a;
+
+}
+
+//#6
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float a1, b1, c1, a2, b2, c2, x, y, z;
+	cout<< "Введите А1, В1 и С1 ";
+	cin>> a1 >> b1 >> c1;
+	cout <<"Введите А2, В2 и С2 ";
+	cin>> a2>> b2>> c2;
+	z = a1 * b2 - a2 * b1;
+	if (z != 0)
+	{
+		x = (b2 * c1 - c2 * b1) / z;
+		y = (a1 * c2 - a2 * c1) / z;
+		cout << x << "  " << y;
+	}
+	else
+		cout<< "Корней нет или их бесконечное множество";
+}

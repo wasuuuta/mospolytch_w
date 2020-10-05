@@ -30,7 +30,7 @@ int main()
 {
 	int n,k;
 	cin >> k >> n;
-	k = (k+n) % 7;
+	k = (k+n-1) % 7;
 	if (k == 0)
 		cout << 7;
 	else

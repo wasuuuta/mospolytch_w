@@ -1,0 +1,131 @@
+
+//#1
+#include <iostream>
+using namespace std;
+
+int PowerA3(int a)
+{
+	a = a * a * a;
+	return a;
+}
+
+int main()
+{
+	int a, b;
+	for  (int i = 0; i < 4; i++)
+	{
+		cin >> a;
+		b = PowerA3(a);
+		cout << b << endl;
+	}
+}
+
+//#2
+#include <iostream>
+using namespace std;
+
+int Sign(int x)
+{
+	if (x < 0)
+		x = -1;
+	else
+	{
+		if (x > 0)
+			x = 1;
+		else
+			x = 0;
+	}
+	return x;
+}
+
+int main()
+{
+	int a, b;
+	cin >> a>>b;
+	cout << Sign(a)+Sign(b) << endl;
+}
+
+//#3
+#include <iostream>
+using namespace std;
+
+float RingS(float r1, float r2)
+{
+	float(s);
+	s= (sqrt(r2) * 3.14)- (sqrt(r1) * 3.14);
+	return s;
+}
+
+int main()
+{
+	float r1, r2, s;
+	for (int i = 0; i < 3; i++)
+	{
+		cin >> r1 >> r2;
+		s = RingS(r1,r2);
+		cout << s << endl;
+	}
+}
+
+//#4
+#include <iostream>
+using namespace std;
+
+int Qater(int x, int y)
+{
+	int q;
+	if ((x > 0) && (y > 0))
+		q=1;
+	if ((x < 0) && (y > 0))
+		q = 2;
+	if ((x < 0) && (y < 0))
+		q = 3;
+	if ((x > 0) && (y < 0))
+		q = 4;
+	return q;
+}
+
+int main()
+{
+	for (int i = 0; i < 3; i++)
+	{
+		int x, y, q;
+	    cin >> x >> y;
+		q = Qater(x, y);
+		cout << q << endl;
+	}
+	
+}
+
+//#5
+#include <iostream>
+using namespace std;
+
+int Fact2(int n)
+{
+	int q=1, s=1;
+	if (n % 2 == 1)
+	{
+		while (n >= q) {
+			s = s * q;
+			q += 2;
+		}
+	}
+	else
+	{
+		q = 2;
+		while (n >= q) {
+			s = s * q;
+			q += 2;
+		}
+	}
+	return s;
+}
+
+int main()
+{
+		int n, s;
+		cin >> n;
+		s = Fact2(n);
+		cout << s << endl;
+}
